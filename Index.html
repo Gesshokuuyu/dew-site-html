@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevLearn — HTML & CSS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page-home">
+
+  <!-- ===================== CABEÇALHO ===================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="DevLearn Home">
+        <span class="logo-bracket">&lt;</span>DevLearn<span class="logo-bracket">/&gt;</span>
+      </a>
+      <nav class="main-nav" aria-label="Navegação principal">
+        <ul>
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="SobreHtml.html" class="nav-link">HTML</a></li>
+          <li><a href="SobreCss.html" class="nav-link">CSS</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="hero-eyebrow">Aprenda do zero</p>
+          <h1 id="hero-title">
+            Construa a<br />
+            <em>Web</em> com<br />
+            confiança.
+          </h1>
+          <p class="hero-desc">
+            HTML e CSS são os pilares de tudo que você vê na internet.
+            Aqui você aprende os dois do jeito certo — com clareza, exemplos práticos e sem enrolação.
+          </p>
+          <div class="hero-cta">
+            <a href="SobreCss.html" class="btn btn-primary">Começar com HTML</a>
+            <a href="SobreCss.html" class="btn btn-ghost">Explorar CSS</a>
+          </div>
+        </div>
+
+        <div class="hero-code" aria-hidden="true">
+          <div class="code-window">
+            <div class="code-titlebar">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+              <span class="code-filename">index.html</span>
+            </div>
+            <pre class="code-body"><code><span class="c-tag">&lt;!DOCTYPE html&gt;</span>
+<span class="c-tag">&lt;html</span> <span class="c-attr">lang</span>=<span class="c-str">"pt-BR"</span><span class="c-tag">&gt;</span>
+  <span class="c-tag">&lt;head&gt;</span>
+    <span class="c-tag">&lt;title&gt;</span><span class="c-text">Meu Site</span><span class="c-tag">&lt;/title&gt;</span>
+    <span class="c-tag">&lt;link</span> <span class="c-attr">rel</span>=<span class="c-str">"stylesheet"</span>
+          <span class="c-attr">href</span>=<span class="c-str">"styles.css"</span><span class="c-tag">&gt;</span>
+  <span class="c-tag">&lt;/head&gt;</span>
+  <span class="c-tag">&lt;body&gt;</span>
+    <span class="c-tag">&lt;h1&gt;</span><span class="c-text">Olá, Mundo!</span><span class="c-tag">&lt;/h1&gt;</span>
+  <span class="c-tag">&lt;/body&gt;</span>
+<span class="c-tag">&lt;/html&gt;</span></code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CARDS ===================== -->
+    <section class="cards-section" aria-labelledby="cards-title">
+      <div class="container">
+        <h2 id="cards-title" class="section-title">Por onde começar?</h2>
+        <div class="cards-grid">
+
+          <article class="card card-html">
+            <header class="card-header">
+              <span class="card-icon" aria-hidden="true">&#60;/&#62;</span>
+              <span class="card-badge">Estrutura</span>
+            </header>
+            <h3 class="card-title">HTML</h3>
+            <p class="card-desc">
+              HyperText Markup Language é a linguagem de marcação que define o esqueleto de toda página web.
+              Tags, atributos, semântica — é aqui que tudo começa.
+            </p>
+            <footer class="card-footer">
+              <a href="SobreHtml.html" class="btn btn-primary btn-sm">Aprender HTML →</a>
+            </footer>
+          </article>
+
+          <article class="card card-css">
+            <header class="card-header">
+              <span class="card-icon" aria-hidden="true">&#35;</span>
+              <span class="card-badge">Estilo</span>
+            </header>
+            <h3 class="card-title">CSS</h3>
+            <p class="card-desc">
+              Cascading Style Sheets cuida de tudo que é visual: cores, fontes, layout, animações.
+              Com CSS você transforma estrutura em design.
+            </p>
+            <footer class="card-footer">
+              <a href="SobreCss.html" class="btn btn-accent btn-sm">Aprender CSS →</a>
+            </footer>
+          </article>
+
+          <article class="card card-combo">
+            <header class="card-header">
+              <span class="card-icon" aria-hidden="true">&#9679;</span>
+              <span class="card-badge">Juntos</span>
+            </header>
+            <h3 class="card-title">HTML + CSS</h3>
+            <p class="card-desc">
+              Quando HTML e CSS trabalham juntos, você tem o poder de criar interfaces completas
+              e profissionais diretamente no navegador.
+            </p>
+            <footer class="card-footer">
+              <a href="SobreHtml.html" class="btn btn-ghost btn-sm">Começar agora →</a>
+            </footer>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== STATS ===================== -->
+    <section class="stats-section" aria-label="Estatísticas do conteúdo">
+      <div class="container stats-inner">
+        <div class="stat">
+          <strong>100%</strong>
+          <span>gratuito</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat">
+          <strong>2</strong>
+          <span>tecnologias</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat">
+          <strong>∞</strong>
+          <span>possibilidades</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== RODAPÉ ===================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-brand">
+        <span class="logo-bracket">&lt;</span>DevLearn<span class="logo-bracket">/&gt;</span>
+      </p>
+      <nav aria-label="Links do rodapé">
+        <ul class="footer-nav">
+          <li><a href="Index.html">Home</a></li>
+          <li><a href="SobreHtml.html">HTML</a></li>
+          <li><a href="SobreCss.html">CSS</a></li>
+        </ul>
+      </nav>
+      <p class="footer-copy">&copy; 2025 DevLearn. Feito dev <code>Dev</code> para <code>Dev</code></p>
+    </div>
+  </footer>
+
+</body>
+</html>

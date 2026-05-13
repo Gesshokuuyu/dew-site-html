@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML — DevLearn</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page-html">
+
+  <!-- ===================== CABEÇALHO ===================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="DevLearn Home">
+        <span class="logo-bracket">&lt;</span>DevLearn<span class="logo-bracket">/&gt;</span>
+      </a>
+      <nav class="main-nav" aria-label="Navegação principal">
+        <ul>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="SobreHtml.html" class="nav-link active">HTML</a></li>
+          <li><a href="SobreCss.html" class="nav-link">CSS</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===================== MAIN ===================== -->
+  <main>
+
+    <!-- Page hero -->
+    <section class="page-hero page-hero--html" aria-labelledby="page-title">
+      <div class="container">
+        <p class="hero-eyebrow">Tecnologia #1</p>
+        <h1 id="page-title"><span class="c-tag">&lt;</span>HTML<span class="c-tag">/&gt;</span></h1>
+        <p class="page-hero-desc">
+          HyperText Markup Language — a linguagem que dá estrutura e significado a toda página web.
+        </p>
+      </div>
+    </section>
+
+    <!-- O que é HTML -->
+    <section class="content-section" aria-labelledby="o-que-e">
+      <div class="container content-grid">
+        <div class="content-text">
+          <h2 id="o-que-e">O que é HTML?</h2>
+          <p>
+            HTML é a linguagem de marcação padrão para criar páginas na web. Ela descreve a <strong>estrutura</strong>
+            de um documento por meio de <em>tags</em> — marcadores que dizem ao navegador o que cada parte do conteúdo representa.
+          </p>
+          <p>
+            Imagine um jornal impresso: ele tem título, subtítulo, parágrafos, imagens, listas. O HTML faz exatamente isso,
+            mas para o ambiente digital, dizendo ao navegador: "isso é um título", "isso é um parágrafo", "isso é uma imagem".
+          </p>
+        </div>
+        <aside class="content-aside" aria-label="Curiosidade sobre HTML">
+          <div class="aside-box">
+            <span class="aside-icon" aria-hidden="true">💡</span>
+            <p><strong>Você sabia?</strong> O HTML foi criado por Tim Berners-Lee em 1991. A versão atual, o HTML5, foi lançada em 2014 e trouxe tags semânticas, áudio, vídeo e muito mais.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Anatomia de uma tag -->
+    <section class="content-section content-section--alt" aria-labelledby="anatomia">
+      <div class="container">
+        <h2 id="anatomia">Anatomia de uma Tag</h2>
+        <p class="section-intro">Todo elemento HTML segue a mesma estrutura básica:</p>
+
+        <div class="anatomy-diagram" aria-label="Diagrama de anatomia de uma tag HTML">
+          <div class="anatomy-code">
+            <code>
+              <span class="anat anat-bracket">&lt;</span><span class="anat anat-tag">p</span>
+              <span class="anat anat-attr"> class</span><span class="anat anat-eq">=</span><span class="anat anat-val">"destaque"</span><span class="anat anat-bracket">&gt;</span>
+              <span class="anat anat-text">Conteúdo aqui</span>
+              <span class="anat anat-bracket">&lt;/</span><span class="anat anat-tag">p</span><span class="anat anat-bracket">&gt;</span>
+            </code>
+          </div>
+          <ul class="anatomy-legend">
+            <li><span class="legend-dot" style="background:var(--clr-tag)"></span> Tag (nome do elemento)</li>
+            <li><span class="legend-dot" style="background:var(--clr-attr)"></span> Atributo</li>
+            <li><span class="legend-dot" style="background:var(--clr-val)"></span> Valor do atributo</li>
+            <li><span class="legend-dot" style="background:var(--clr-text)"></span> Conteúdo textual</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tags essenciais -->
+    <section class="content-section" aria-labelledby="tags-essenciais">
+      <div class="container">
+        <h2 id="tags-essenciais">Tags Essenciais</h2>
+        <p class="section-intro">Conheça as tags mais usadas no dia a dia:</p>
+
+        <div class="tags-grid">
+
+          <article class="tag-card">
+            <header><code class="tag-name">&lt;h1&gt; … &lt;h6&gt;</code></header>
+            <p>Títulos hierárquicos. <code>&lt;h1&gt;</code> é o mais importante e deve aparecer uma vez por página.</p>
+          </article>
+
+          <article class="tag-card">
+            <header><code class="tag-name">&lt;p&gt;</code></header>
+            <p>Parágrafo de texto. O bloco mais comum para conteúdo textual em uma página.</p>
+          </article>
+
+          <article class="tag-card">
+            <header><code class="tag-name">&lt;a&gt;</code></header>
+            <p>Âncora/link. Com o atributo <code>href</code>, cria hiperlinks para outras páginas ou recursos.</p>
+          </article>
+
+          <article class="tag-card">
+            <header><code class="tag-name">&lt;img&gt;</code></header>
+            <p>Imagem. Usa <code>src</code> para o caminho e <code>alt</code> para descrição acessível.</p>
+          </article>
+
+          <article class="tag-card">
+            <header><code class="tag-name">&lt;ul&gt; / &lt;ol&gt;</code></header>
+            <p>Listas não-ordenadas e ordenadas. Cada item é envolto pela tag <code>&lt;li&gt;</code>.</p>
+          </article>
+
+          <article class="tag-card">
+            <header><code class="tag-name">&lt;div&gt; / &lt;span&gt;</code></header>
+            <p>Contêineres genéricos. <code>&lt;div&gt;</code> é bloco, <code>&lt;span&gt;</code> é inline.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Tags semânticas -->
+    <section class="content-section content-section--alt" aria-labelledby="semantica">
+      <div class="container">
+        <h2 id="semantica">Tags Semânticas</h2>
+        <p class="section-intro">
+          HTML5 introduziu tags com significado próprio, que deixam o código mais legível para humanos e máquinas:
+        </p>
+
+        <div class="semantic-layout" aria-label="Diagrama de layout semântico HTML5">
+          <div class="sem-box sem-header"><code>&lt;header&gt;</code></div>
+          <div class="sem-box sem-nav"><code>&lt;nav&gt;</code></div>
+          <div class="sem-body-row">
+            <div class="sem-box sem-main"><code>&lt;main&gt;</code>
+              <div class="sem-box sem-article"><code>&lt;article&gt;</code></div>
+              <div class="sem-box sem-section"><code>&lt;section&gt;</code></div>
+            </div>
+            <div class="sem-box sem-aside"><code>&lt;aside&gt;</code></div>
+          </div>
+          <div class="sem-box sem-footer"><code>&lt;footer&gt;</code></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA para CSS -->
+    <section class="cta-section" aria-label="Próximo passo">
+      <div class="container cta-inner">
+        <h2>Pronto para o próximo passo?</h2>
+        <p>Agora que você conhece a estrutura, aprenda a estilizar tudo com CSS.</p>
+        <a href="SobreCss.html" class="btn btn-accent">Aprender CSS →</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== RODAPÉ ===================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-brand">
+        <span class="logo-bracket">&lt;</span>DevLearn<span class="logo-bracket">/&gt;</span>
+      </p>
+      <nav aria-label="Links do rodapé">
+        <ul class="footer-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="SobreHtml.html">HTML</a></li>
+          <li><a href="SobreCss.html">CSS</a></li>
+        </ul>
+      </nav>
+      <p class="footer-copy">&copy; 2025 DevLearn. Feito dev <code>Dev</code> para <code>Dev</code></p>
+    </div>
+  </footer>
+
+</body>
+</html>
