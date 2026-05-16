@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>HTML — DevLearn</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../css/global.css" />
+  <link rel="stylesheet" href="../css/pages.css" />
 </head>
+
 <body class="page-html">
 
   <!-- ===================== CABEÇALHO ===================== -->
   <header class="site-header">
     <div class="container header-inner">
-      <a href="index.html" class="logo" aria-label="DevLearn Home">
+      <a href="../index.html" class="logo" aria-label="DevLearn Home">
         <span class="logo-bracket">&lt;</span>DevLearn<span class="logo-bracket">/&gt;</span>
       </a>
       <nav class="main-nav" aria-label="Navegação principal">
         <ul>
-          <li><a href="index.html" class="nav-link">Home</a></li>
-          <li><a href="SobreHtml.html" class="nav-link active">HTML</a></li>
-          <li><a href="SobreCss.html" class="nav-link">CSS</a></li>
+          <li><a href="../index.html" class="nav-link">Home</a></li>
+          <li><a href="sobreHtml.html" class="nav-link active">HTML</a></li>
+          <li><a href="sobreCss.html" class="nav-link">CSS</a></li>
         </ul>
       </nav>
     </div>
@@ -37,28 +42,6 @@
         <p class="page-hero-desc">
           HyperText Markup Language — a linguagem que dá estrutura e significado a toda página web.
         </p>
-      </div>
-    </section>
-
-    <!-- O que é HTML -->
-    <section class="content-section" aria-labelledby="o-que-e">
-      <div class="container content-grid">
-        <div class="content-text">
-          <h2 id="o-que-e">O que é HTML?</h2>
-          <p>
-            HTML é a linguagem de marcação padrão para criar páginas na web. Ela descreve a <strong>estrutura</strong>
-            de um documento por meio de <em>tags</em> — marcadores que dizem ao navegador o que cada parte do conteúdo representa.
-          </p>
-          <p>
-            Imagine um jornal impresso: ele tem título, subtítulo, parágrafos, imagens, listas. O HTML faz exatamente isso,
-            mas para o ambiente digital, dizendo ao navegador: "isso é um título", "isso é um parágrafo", "isso é uma imagem".
-          </p>
-        </div>
-        <aside class="content-aside" aria-label="Curiosidade sobre HTML">
-          <div class="aside-box">
-            <p><strong>Você sabia?</strong> O HTML foi criado por Tim Berners-Lee em 1991. A versão atual, o HTML5, foi lançada em 2014 e trouxe tags semânticas, áudio, vídeo e muito mais.</p>
-          </div>
-        </aside>
       </div>
     </section>
 
@@ -157,30 +140,33 @@
         <div class="content-text">
           <h2 id="o-que-e">Por que semântica?</h2>
           <p>
-            A semântica no HTML serve para dar <strong>significado</strong> aos elementos da página. Em vez de usar apenas
+            A semântica no HTML serve para dar <strong>significado</strong> aos elementos da página. Em vez de usar
+            apenas
             tags genéricas, como <em>div</em>, utilizamos elementos que descrevem claramente o conteúdo, como
             <em>header</em>, <em>main</em>, <em>section</em> e <em>footer</em>.
           </p>
           <p>
-            Isso torna o código mais organizado, melhora a acessibilidade para leitores de tela e ajuda mecanismos de busca,
+            Isso torna o código mais organizado, melhora a acessibilidade para leitores de tela e ajuda mecanismos de
+            busca,
             como o Google, a entenderem melhor a estrutura e a importância de cada parte do site.
           </p>
         </div>
 
         <aside class="content-aside" aria-label="Curiosidade sobre HTML">
           <div class="aside-box">
-            <p><strong>Você sabia?</strong> Sites que utilizam HTML semântico costumam ter melhor desempenho em SEO e oferecem uma experiência mais acessível para todos os usuários.</p>
+            <p><strong>Você sabia?</strong> Sites que utilizam HTML semântico costumam ter melhor desempenho em SEO e
+              oferecem uma experiência mais acessível para todos os usuários.</p>
           </div>
         </aside>
       </div>
     </section>
-    
+
     <!-- CTA para CSS -->
     <section class="cta-section" aria-label="Próximo passo">
       <div class="container cta-inner">
         <h2>Pronto para o próximo passo?</h2>
         <p>Agora que você conhece a estrutura, aprenda a estilizar tudo com CSS.</p>
-        <a href="SobreCss.html" class="btn btn-accent">Aprender CSS →</a>
+        <a href="sobreCss.html" class="btn btn-accent">Aprender CSS →</a>
       </div>
     </section>
 
@@ -194,14 +180,15 @@
       </p>
       <nav aria-label="Links do rodapé">
         <ul class="footer-nav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="SobreHtml.html">HTML</a></li>
-          <li><a href="SobreCss.html">CSS</a></li>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="sobreHtml.html">HTML</a></li>
+          <li><a href="sobreCss.html">CSS</a></li>
         </ul>
       </nav>
-      <p class="footer-copy">&copy; 2026 DevLearn. Feito dev <code>Dev</code> para <code>Dev</code></p>
+      <p class="footer-copy">&copy; 2026 DevLearn. Feito de <code>Dev</code> para <code>Dev</code></p>
     </div>
   </footer>
 
 </body>
+
 </html>
