@@ -14,6 +14,7 @@
 </head>
 
 <body class="page-css">
+  <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
 
   <!-- ===================== CABEÇALHO ===================== -->
   <header class="site-header">
@@ -32,13 +33,13 @@
   </header>
 
   <!-- ===================== MAIN ===================== -->
-  <main>
+  <main id="main-content" tabindex="-1">
 
     <!-- Page hero -->
     <section class="page-hero page-hero--css" aria-labelledby="page-title">
       <div class="container">
         <p class="hero-eyebrow">Tecnologia #2</p>
-        <h1 id="page-title"><span class="c-brace">&#123;</span> CSS <span class="c-brace">&#125;</span></h1>
+        <h1 id="page-title" tabindex="-1"><span class="c-brace">&#123;</span> CSS <span class="c-brace">&#125;</span></h1>
         <p class="page-hero-desc">
           Cascading Style Sheets — a linguagem que transforma estrutura em design, cor e movimento.
         </p>
@@ -46,7 +47,7 @@
     </section>
 
     <!-- O que é CSS -->
-    <section class="content-section" aria-labelledby="o-que-e-css">
+    <section class="content-section" aria-labelledby="o-que-e-css" tabindex="0">
       <div class="container content-grid">
         <div class="content-text">
           <h2 id="o-que-e-css">O que é CSS?</h2>
@@ -70,7 +71,7 @@
     </section>
 
     <!-- Anatomia de uma regra CSS -->
-    <section class="content-section content-section--alt" aria-labelledby="anatomia-css">
+    <section class="content-section content-section--alt" aria-labelledby="anatomia-css" tabindex="0">
       <div class="container">
         <h2 id="anatomia-css">Anatomia de uma Regra CSS</h2>
         <p class="section-intro">Toda regra CSS é composta por seletor, propriedade e valor:</p>
@@ -104,33 +105,33 @@
 
         <div class="tags-grid">
 
-          <article class="tag-card tag-card--css">
-            <header><code class="tag-name">elemento</code></header>
+          <article class="tag-card tag-card--css" id="card-elemento" role="article">
+            <header><a class="card-link" href="#card-elemento"><code class="tag-name">elemento</code></a></header>
             <p>Seleciona pela tag HTML. Ex: <code>p &#123; color: red &#125;</code> estiliza todos os parágrafos.</p>
           </article>
 
-          <article class="tag-card tag-card--css">
-            <header><code class="tag-name">.classe</code></header>
+          <article class="tag-card tag-card--css" id="card-classe" role="article">
+            <header><a class="card-link" href="#card-classe"><code class="tag-name">.classe</code></a></header>
             <p>Seleciona pelo atributo <code>class</code>. Pode ser reutilizado em múltiplos elementos.</p>
           </article>
 
-          <article class="tag-card tag-card--css">
-            <header><code class="tag-name">#id</code></header>
+          <article class="tag-card tag-card--css" id="card-id" role="article">
+            <header><a class="card-link" href="#card-id"><code class="tag-name">#id</code></a></header>
             <p>Seleciona pelo atributo <code>id</code>. Deve ser único por página, alta especificidade.</p>
           </article>
 
-          <article class="tag-card tag-card--css">
-            <header><code class="tag-name">pai &gt; filho</code></header>
+          <article class="tag-card tag-card--css" id="card-pai-filho" role="article">
+            <header><a class="card-link" href="#card-pai-filho"><code class="tag-name">pai &gt; filho</code></a></header>
             <p>Seleciona elementos filhos diretos. Permite estilizar com base na hierarquia do HTML.</p>
           </article>
 
-          <article class="tag-card tag-card--css">
-            <header><code class="tag-name">:hover</code></header>
+          <article class="tag-card tag-card--css" id="card-hover" role="article">
+            <header><a class="card-link" href="#card-hover"><code class="tag-name">:hover</code></a></header>
             <p>Pseudo-classe que dispara quando o mouse passa sobre o elemento — ideal para interações.</p>
           </article>
 
-          <article class="tag-card tag-card--css">
-            <header><code class="tag-name">@media</code></header>
+          <article class="tag-card tag-card--css" id="card-media" role="article">
+            <header><a class="card-link" href="#card-media"><code class="tag-name">@media</code></a></header>
             <p>At-rule para responsividade. Aplica estilos diferentes conforme o tamanho da tela.</p>
           </article>
 
@@ -139,7 +140,7 @@
     </section>
 
     <!-- Box Model -->
-    <section class="content-section content-section--alt" aria-labelledby="box-model">
+    <section class="content-section content-section--alt" aria-labelledby="box-model" tabindex="0">
       <div class="container">
         <h2 id="box-model">Box Model</h2>
         <p class="section-intro">
@@ -341,7 +342,7 @@
     </section>
 
     <!-- Mobile First -->
-    <section class="content-section content-section--alt" aria-labelledby="mobile-first">
+    <section class="content-section content-section--alt" aria-labelledby="mobile-first" tabindex="0">
       <div class="container content-grid">
         <div class="content-text">
           <h2 id="mobile-first">Mobile First</h2>
@@ -387,7 +388,7 @@
           <li><a href="sobreCss.html">CSS</a></li>
         </ul>
       </nav>
-      <p class="footer-copy">&copy; 2026 DevLearn. Feito de <code>Dev</code> para <code>Dev</code></p>
+      <p class="footer-copy">&copy; 2026 Todos os direitos reservados. Feito de <code>Dev</code> para <code>Dev</code></p>
     </div>
   </footer>
 

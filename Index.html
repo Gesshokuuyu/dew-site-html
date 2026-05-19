@@ -14,6 +14,7 @@
 </head>
 
 <body class="page-home">
+  <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
 
   <!-- ===================== CABEÇALHO ===================== -->
   <header class="site-header">
@@ -32,12 +33,12 @@
   </header>
 
   <!-- ===================== HERO ===================== -->
-  <main>
+  <main id="main-content" tabindex="-1">
     <section class="hero" aria-labelledby="hero-title">
       <div class="container hero-inner">
         <div class="hero-text">
           <p class="hero-eyebrow">Aprenda do zero</p>
-          <h1 id="hero-title">
+          <h1 id="hero-title" tabindex="-1">
             Construa a<br />
             <em>Web</em> com<br />
             confiança.
@@ -64,7 +65,7 @@
         <h2 id="cards-title" class="section-title">Por onde começar?</h2>
         <div class="cards-grid">
 
-          <article class="card card-html">
+          <article class="card card-html" role="article">
             <header class="card-header">
               <span class="card-icon" aria-hidden="true">&#60;/&#62;</span>
               <span class="card-badge">Estrutura</span>
@@ -79,7 +80,7 @@
             </footer>
           </article>
 
-          <article class="card card-css">
+          <article class="card card-css" role="article">
             <header class="card-header">
               <span class="card-icon" aria-hidden="true">&#35;</span>
               <span class="card-badge">Estilo</span>
@@ -111,7 +112,7 @@
             <li><a href="pages/sobreCss.html">CSS</a></li>
           </ul>
         </nav>
-        <p class="footer-copy">&copy; 2026 DevLearn. Feito de <code>Dev</code> para <code>Dev</code></p>
+        <p class="footer-copy">&copy; 2026 Todos os direitos reservados. Feito de <code>Dev</code> para <code>Dev</code></p>
       </div>
     </footer>
 

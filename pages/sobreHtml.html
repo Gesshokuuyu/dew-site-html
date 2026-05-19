@@ -14,6 +14,7 @@
 </head>
 
 <body class="page-html">
+  <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
 
   <!-- ===================== CABEÇALHO ===================== -->
   <header class="site-header">
@@ -32,13 +33,13 @@
   </header>
 
   <!-- ===================== MAIN ===================== -->
-  <main>
+  <main id="main-content" tabindex="-1">
 
     <!-- Page hero -->
     <section class="page-hero page-hero--html" aria-labelledby="page-title">
       <div class="container">
         <p class="hero-eyebrow">Tecnologia #1</p>
-        <h1 id="page-title"><span class="c-tag">&lt;</span>HTML<span class="c-tag">/&gt;</span></h1>
+        <h1 id="page-title" tabindex="-1"><span class="c-tag">&lt;</span>HTML<span class="c-tag">/&gt;</span></h1>
         <p class="page-hero-desc">
           HyperText Markup Language — a linguagem que dá estrutura e significado a toda página web.
         </p>
@@ -46,7 +47,7 @@
     </section>
 
     <!-- Anatomia de uma tag -->
-    <section class="content-section content-section--alt" aria-labelledby="anatomia">
+    <section class="content-section content-section--alt" aria-labelledby="anatomia" tabindex="0">
       <div class="container">
         <h2 id="anatomia">Anatomia de uma Tag</h2>
         <p class="section-intro">Todo elemento HTML segue a mesma estrutura básica:</p>
@@ -78,33 +79,33 @@
 
         <div class="tags-grid">
 
-          <article class="tag-card">
-            <header><code class="tag-name">&lt;h1&gt; … &lt;h6&gt;</code></header>
+          <article class="tag-card" id="card-titulos" role="article">
+            <header><a class="card-link" href="#card-titulos"><code class="tag-name">&lt;h1&gt; … &lt;h6&gt;</code></a></header>
             <p>Títulos hierárquicos. <code>&lt;h1&gt;</code> é o mais importante e deve aparecer uma vez por página.</p>
           </article>
 
-          <article class="tag-card">
-            <header><code class="tag-name">&lt;p&gt;</code></header>
+          <article class="tag-card" id="card-paragrafo" role="article">
+            <header><a class="card-link" href="#card-paragrafo"><code class="tag-name">&lt;p&gt;</code></a></header>
             <p>Parágrafo de texto. O bloco mais comum para conteúdo textual em uma página.</p>
           </article>
 
-          <article class="tag-card">
-            <header><code class="tag-name">&lt;a&gt;</code></header>
+          <article class="tag-card" id="card-ancora" role="article">
+            <header><a class="card-link" href="#card-ancora"><code class="tag-name">&lt;a&gt;</code></a></header>
             <p>Âncora/link. Com o atributo <code>href</code>, cria hiperlinks para outras páginas ou recursos.</p>
           </article>
 
-          <article class="tag-card">
-            <header><code class="tag-name">&lt;img&gt;</code></header>
+          <article class="tag-card" id="card-img" role="article">
+            <header><a class="card-link" href="#card-img"><code class="tag-name">&lt;img&gt;</code></a></header>
             <p>Imagem. Usa <code>src</code> para o caminho e <code>alt</code> para descrição acessível.</p>
           </article>
 
-          <article class="tag-card">
-            <header><code class="tag-name">&lt;ul&gt; / &lt;ol&gt;</code></header>
+          <article class="tag-card" id="card-listas" role="article">
+            <header><a class="card-link" href="#card-listas"><code class="tag-name">&lt;ul&gt; / &lt;ol&gt;</code></a></header>
             <p>Listas não-ordenadas e ordenadas. Cada item é envolto pela tag <code>&lt;li&gt;</code>.</p>
           </article>
 
-          <article class="tag-card">
-            <header><code class="tag-name">&lt;div&gt; / &lt;span&gt;</code></header>
+          <article class="tag-card" id="card-div-span" role="article">
+            <header><a class="card-link" href="#card-div-span"><code class="tag-name">&lt;div&gt; / &lt;span&gt;</code></a></header>
             <p>Contêineres genéricos. <code>&lt;div&gt;</code> é bloco, <code>&lt;span&gt;</code> é inline.</p>
           </article>
 
@@ -113,7 +114,7 @@
     </section>
 
     <!-- Tags semânticas -->
-    <section class="content-section content-section--alt" aria-labelledby="semantica">
+    <section class="content-section content-section--alt" aria-labelledby="semantica" tabindex="0">
       <div class="container">
         <h2 id="semantica">Tags Semânticas</h2>
         <p class="section-intro">
@@ -135,7 +136,7 @@
       </div>
     </section>
 
-    <section class="content-section" aria-labelledby="por-que-semantica">
+    <section class="content-section" aria-labelledby="por-que-semantica" tabindex="0">
       <div class="container content-grid">
         <div class="content-text">
           <h2 id="o-que-e">Por que semântica?</h2>
@@ -185,10 +186,8 @@
           <li><a href="sobreCss.html">CSS</a></li>
         </ul>
       </nav>
-      <p class="footer-copy">&copy; 2026 DevLearn. Feito de <code>Dev</code> para <code>Dev</code></p>
+      <p class="footer-copy">&copy; 2026 Todos os direitos reservados. Feito de <code>Dev</code> para <code>Dev</code></p>
     </div>
   </footer>
-
 </body>
-
 </html>

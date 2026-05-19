@@ -83,10 +83,21 @@
   display: flex;
   flex-direction: column;
   gap: .75rem;
+  transition: border-color .2s, box-shadow .2s;
+}
+
+.aside-box:focus-within {
+  border-left-color: var(--clr-html);
+  box-shadow: 0 4px 12px rgba(255,107,53,0.12);
 }
 
 .aside-box--css {
   border-left-color: var(--clr-css);
+}
+
+.aside-box--css:focus-within {
+  border-left-color: var(--clr-css);
+  box-shadow: 0 4px 12px rgba(167,139,250,0.12);
 }
 
 .aside-icon {
@@ -213,7 +224,7 @@
   display: flex;
   flex-direction: column;
   gap: .75rem;
-  transition: border-color .2s, transform .2s;
+  transition: border-color .2s, transform .2s, box-shadow .2s;
 }
 
 .tag-card:hover {
@@ -221,8 +232,18 @@
   transform: translateY(-2px);
 }
 
+.tag-card:focus-within {
+  border-color: var(--clr-html);
+  box-shadow: 0 8px 24px rgba(255,107,53,0.12);
+}
+
 .tag-card--css:hover {
   border-color: var(--clr-css);
+}
+
+.tag-card--css:focus-within {
+  border-color: var(--clr-css);
+  box-shadow: 0 8px 24px rgba(167,139,250,0.12);
 }
 
 .tag-name {

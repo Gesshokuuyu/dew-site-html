@@ -92,12 +92,21 @@ h1 em {
   box-shadow: 0 16px 48px rgba(0, 0, 0, .4);
 }
 
+.card:focus-within {
+  border-color: var(--clr-html);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, .4);
+}
+
 .card-html {
   border-top: 3px solid var(--clr-html);
 }
 
 .card-css {
   border-top: 3px solid var(--clr-css);
+}
+
+.card-css:focus-within {
+  border-color: var(--clr-css);
 }
 
 .card-header {
