@@ -18,7 +18,7 @@
   <!-- ===================== CABEÇALHO ===================== -->
   <header class="site-header">
     <div class="container header-inner">
-      <a href="Index.html" class="logo" aria-label="DevLearn Home">
+      <a href="../Index.html" class="logo" aria-label="DevLearn Home">
         <span class="logo-bracket">&lt;</span>DevLearn<span class="logo-bracket">/&gt;</span>
       </a>
       <nav class="main-nav" aria-label="Navegação principal">
@@ -292,6 +292,48 @@
           <article class="tag-card tag-card--css">
             <header><code class="tag-name">animation-fill-mode</code></header>
             <p><code>forwards</code> mantém o estado final da animação após ela terminar.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Medidas: Fixas vs Relativas -->
+    <section class="content-section" aria-labelledby="medidas">
+      <div class="container">
+        <h2 id="medidas">Medidas: Fixas vs Relativas</h2>
+        <p class="section-intro">Escolher a unidade correta afeta responsividade, acessibilidade e manutenção do código:</p>
+
+        <div class="tags-grid">
+
+          <article class="tag-card tag-card--css">
+            <header><code class="tag-name">px (pixel)</code></header>
+            <p><strong>Fixo.</strong> Não escala com o zoom ou preferências do usuário. Útil para bordas e detalhes precisos, mas evitar em fontes.</p>
+          </article>
+
+          <article class="tag-card tag-card--css">
+            <header><code class="tag-name">rem (root em)</code></header>
+            <p><strong>Relativo.</strong> Baseado no tamanho da fonte do elemento <code>&lt;html&gt;</code>. Melhor opção para layouts e tipografia responsivos.</p>
+          </article>
+
+          <article class="tag-card tag-card--css">
+            <header><code class="tag-name">em (element em)</code></header>
+            <p><strong>Relativo.</strong> Baseado no tamanho da fonte do elemento pai. Útil para componentes reutilizáveis com espaçamento proporcional.</p>
+          </article>
+
+          <article class="tag-card tag-card--css">
+            <header><code class="tag-name">% (percentual)</code></header>
+            <p><strong>Relativo.</strong> Baseado no elemento pai. Perfeito para larguras fluidas em layouts responsivos.</p>
+          </article>
+
+          <article class="tag-card tag-card--css">
+            <header><code class="tag-name">vh / vw (viewport)</code></header>
+            <p><strong>Relativo.</strong> Baseado no tamanho da janela (altura/largura). Ótimo para seções fullscreen e heróis.</p>
+          </article>
+
+          <article class="tag-card tag-card--css">
+            <header><code class="tag-name">clamp()</code></header>
+            <p><strong>Fluido.</strong> Define mín, preferido e máx. Ex: <code>clamp(1rem, 5vw, 3rem)</code> — tipografia responsiva sem @media.</p>
           </article>
 
         </div>
